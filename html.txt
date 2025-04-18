@@ -1,1 +1,580 @@
 <!-- 抓取的系统HTML结构参考 -->
+<html lang=""><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" href="/favicon.ico"><style></style><title>中山大学体育场馆预订系统</title><script defer="defer" src="/js/chunk-vendors.ef1324da.js"></script><script defer="defer" src="/js/app.6a82730e.js"></script><link href="/css/chunk-vendors.647bd2d2.css" rel="stylesheet"><link href="/css/app.5426b55d.css" rel="stylesheet"><style type="text/css" id="vuetify-theme-stylesheet">.v-application a { color: #006633; }
+.v-application .primary {
+  background-color: #006633 !important;
+  border-color: #006633 !important;
+}
+.v-application .primary--text {
+  color: #006633 !important;
+  caret-color: #006633 !important;
+}
+.v-application .primary.lighten-5 {
+  background-color: #98eeb0 !important;
+  border-color: #98eeb0 !important;
+}
+.v-application .primary--text.text--lighten-5 {
+  color: #98eeb0 !important;
+  caret-color: #98eeb0 !important;
+}
+.v-application .primary.lighten-4 {
+  background-color: #7dd195 !important;
+  border-color: #7dd195 !important;
+}
+.v-application .primary--text.text--lighten-4 {
+  color: #7dd195 !important;
+  caret-color: #7dd195 !important;
+}
+.v-application .primary.lighten-3 {
+  background-color: #61b57b !important;
+  border-color: #61b57b !important;
+}
+.v-application .primary--text.text--lighten-3 {
+  color: #61b57b !important;
+  caret-color: #61b57b !important;
+}
+.v-application .primary.lighten-2 {
+  background-color: #469a62 !important;
+  border-color: #469a62 !important;
+}
+.v-application .primary--text.text--lighten-2 {
+  color: #469a62 !important;
+  caret-color: #469a62 !important;
+}
+.v-application .primary.lighten-1 {
+  background-color: #29804a !important;
+  border-color: #29804a !important;
+}
+.v-application .primary--text.text--lighten-1 {
+  color: #29804a !important;
+  caret-color: #29804a !important;
+}
+.v-application .primary.darken-1 {
+  background-color: #004d1d !important;
+  border-color: #004d1d !important;
+}
+.v-application .primary--text.text--darken-1 {
+  color: #004d1d !important;
+  caret-color: #004d1d !important;
+}
+.v-application .primary.darken-2 {
+  background-color: #003606 !important;
+  border-color: #003606 !important;
+}
+.v-application .primary--text.text--darken-2 {
+  color: #003606 !important;
+  caret-color: #003606 !important;
+}
+.v-application .primary.darken-3 {
+  background-color: #002300 !important;
+  border-color: #002300 !important;
+}
+.v-application .primary--text.text--darken-3 {
+  color: #002300 !important;
+  caret-color: #002300 !important;
+}
+.v-application .primary.darken-4 {
+  background-color: #001100 !important;
+  border-color: #001100 !important;
+}
+.v-application .primary--text.text--darken-4 {
+  color: #001100 !important;
+  caret-color: #001100 !important;
+}
+.v-application .secondary {
+  background-color: #b0bec5 !important;
+  border-color: #b0bec5 !important;
+}
+.v-application .secondary--text {
+  color: #b0bec5 !important;
+  caret-color: #b0bec5 !important;
+}
+.v-application .secondary.lighten-5 {
+  background-color: #ffffff !important;
+  border-color: #ffffff !important;
+}
+.v-application .secondary--text.text--lighten-5 {
+  color: #ffffff !important;
+  caret-color: #ffffff !important;
+}
+.v-application .secondary.lighten-4 {
+  background-color: #ffffff !important;
+  border-color: #ffffff !important;
+}
+.v-application .secondary--text.text--lighten-4 {
+  color: #ffffff !important;
+  caret-color: #ffffff !important;
+}
+.v-application .secondary.lighten-3 {
+  background-color: #ffffff !important;
+  border-color: #ffffff !important;
+}
+.v-application .secondary--text.text--lighten-3 {
+  color: #ffffff !important;
+  caret-color: #ffffff !important;
+}
+.v-application .secondary.lighten-2 {
+  background-color: #e8f6fe !important;
+  border-color: #e8f6fe !important;
+}
+.v-application .secondary--text.text--lighten-2 {
+  color: #e8f6fe !important;
+  caret-color: #e8f6fe !important;
+}
+.v-application .secondary.lighten-1 {
+  background-color: #cbdae1 !important;
+  border-color: #cbdae1 !important;
+}
+.v-application .secondary--text.text--lighten-1 {
+  color: #cbdae1 !important;
+  caret-color: #cbdae1 !important;
+}
+.v-application .secondary.darken-1 {
+  background-color: #95a3aa !important;
+  border-color: #95a3aa !important;
+}
+.v-application .secondary--text.text--darken-1 {
+  color: #95a3aa !important;
+  caret-color: #95a3aa !important;
+}
+.v-application .secondary.darken-2 {
+  background-color: #7b898f !important;
+  border-color: #7b898f !important;
+}
+.v-application .secondary--text.text--darken-2 {
+  color: #7b898f !important;
+  caret-color: #7b898f !important;
+}
+.v-application .secondary.darken-3 {
+  background-color: #626f76 !important;
+  border-color: #626f76 !important;
+}
+.v-application .secondary--text.text--darken-3 {
+  color: #626f76 !important;
+  caret-color: #626f76 !important;
+}
+.v-application .secondary.darken-4 {
+  background-color: #4a575d !important;
+  border-color: #4a575d !important;
+}
+.v-application .secondary--text.text--darken-4 {
+  color: #4a575d !important;
+  caret-color: #4a575d !important;
+}
+.v-application .accent {
+  background-color: #8c9eff !important;
+  border-color: #8c9eff !important;
+}
+.v-application .accent--text {
+  color: #8c9eff !important;
+  caret-color: #8c9eff !important;
+}
+.v-application .accent.lighten-5 {
+  background-color: #ffffff !important;
+  border-color: #ffffff !important;
+}
+.v-application .accent--text.text--lighten-5 {
+  color: #ffffff !important;
+  caret-color: #ffffff !important;
+}
+.v-application .accent.lighten-4 {
+  background-color: #ffffff !important;
+  border-color: #ffffff !important;
+}
+.v-application .accent--text.text--lighten-4 {
+  color: #ffffff !important;
+  caret-color: #ffffff !important;
+}
+.v-application .accent.lighten-3 {
+  background-color: #e3f1ff !important;
+  border-color: #e3f1ff !important;
+}
+.v-application .accent--text.text--lighten-3 {
+  color: #e3f1ff !important;
+  caret-color: #e3f1ff !important;
+}
+.v-application .accent.lighten-2 {
+  background-color: #c6d4ff !important;
+  border-color: #c6d4ff !important;
+}
+.v-application .accent--text.text--lighten-2 {
+  color: #c6d4ff !important;
+  caret-color: #c6d4ff !important;
+}
+.v-application .accent.lighten-1 {
+  background-color: #a9b9ff !important;
+  border-color: #a9b9ff !important;
+}
+.v-application .accent--text.text--lighten-1 {
+  color: #a9b9ff !important;
+  caret-color: #a9b9ff !important;
+}
+.v-application .accent.darken-1 {
+  background-color: #6f84e2 !important;
+  border-color: #6f84e2 !important;
+}
+.v-application .accent--text.text--darken-1 {
+  color: #6f84e2 !important;
+  caret-color: #6f84e2 !important;
+}
+.v-application .accent.darken-2 {
+  background-color: #526bc6 !important;
+  border-color: #526bc6 !important;
+}
+.v-application .accent--text.text--darken-2 {
+  color: #526bc6 !important;
+  caret-color: #526bc6 !important;
+}
+.v-application .accent.darken-3 {
+  background-color: #3353aa !important;
+  border-color: #3353aa !important;
+}
+.v-application .accent--text.text--darken-3 {
+  color: #3353aa !important;
+  caret-color: #3353aa !important;
+}
+.v-application .accent.darken-4 {
+  background-color: #013c8f !important;
+  border-color: #013c8f !important;
+}
+.v-application .accent--text.text--darken-4 {
+  color: #013c8f !important;
+  caret-color: #013c8f !important;
+}
+.v-application .error {
+  background-color: #b71c1c !important;
+  border-color: #b71c1c !important;
+}
+.v-application .error--text {
+  color: #b71c1c !important;
+  caret-color: #b71c1c !important;
+}
+.v-application .error.lighten-5 {
+  background-color: #ffaf95 !important;
+  border-color: #ffaf95 !important;
+}
+.v-application .error--text.text--lighten-5 {
+  color: #ffaf95 !important;
+  caret-color: #ffaf95 !important;
+}
+.v-application .error.lighten-4 {
+  background-color: #ff937b !important;
+  border-color: #ff937b !important;
+}
+.v-application .error--text.text--lighten-4 {
+  color: #ff937b !important;
+  caret-color: #ff937b !important;
+}
+.v-application .error.lighten-3 {
+  background-color: #ff7762 !important;
+  border-color: #ff7762 !important;
+}
+.v-application .error--text.text--lighten-3 {
+  color: #ff7762 !important;
+  caret-color: #ff7762 !important;
+}
+.v-application .error.lighten-2 {
+  background-color: #f75b4a !important;
+  border-color: #f75b4a !important;
+}
+.v-application .error--text.text--lighten-2 {
+  color: #f75b4a !important;
+  caret-color: #f75b4a !important;
+}
+.v-application .error.lighten-1 {
+  background-color: #d73e32 !important;
+  border-color: #d73e32 !important;
+}
+.v-application .error--text.text--lighten-1 {
+  color: #d73e32 !important;
+  caret-color: #d73e32 !important;
+}
+.v-application .error.darken-1 {
+  background-color: #980005 !important;
+  border-color: #980005 !important;
+}
+.v-application .error--text.text--darken-1 {
+  color: #980005 !important;
+  caret-color: #980005 !important;
+}
+.v-application .error.darken-2 {
+  background-color: #7a0000 !important;
+  border-color: #7a0000 !important;
+}
+.v-application .error--text.text--darken-2 {
+  color: #7a0000 !important;
+  caret-color: #7a0000 !important;
+}
+.v-application .error.darken-3 {
+  background-color: #5e0000 !important;
+  border-color: #5e0000 !important;
+}
+.v-application .error--text.text--darken-3 {
+  color: #5e0000 !important;
+  caret-color: #5e0000 !important;
+}
+.v-application .error.darken-4 {
+  background-color: #480000 !important;
+  border-color: #480000 !important;
+}
+.v-application .error--text.text--darken-4 {
+  color: #480000 !important;
+  caret-color: #480000 !important;
+}
+.v-application .info {
+  background-color: #2196f3 !important;
+  border-color: #2196f3 !important;
+}
+.v-application .info--text {
+  color: #2196f3 !important;
+  caret-color: #2196f3 !important;
+}
+.v-application .info.lighten-5 {
+  background-color: #d4ffff !important;
+  border-color: #d4ffff !important;
+}
+.v-application .info--text.text--lighten-5 {
+  color: #d4ffff !important;
+  caret-color: #d4ffff !important;
+}
+.v-application .info.lighten-4 {
+  background-color: #b5ffff !important;
+  border-color: #b5ffff !important;
+}
+.v-application .info--text.text--lighten-4 {
+  color: #b5ffff !important;
+  caret-color: #b5ffff !important;
+}
+.v-application .info.lighten-3 {
+  background-color: #95e8ff !important;
+  border-color: #95e8ff !important;
+}
+.v-application .info--text.text--lighten-3 {
+  color: #95e8ff !important;
+  caret-color: #95e8ff !important;
+}
+.v-application .info.lighten-2 {
+  background-color: #75ccff !important;
+  border-color: #75ccff !important;
+}
+.v-application .info--text.text--lighten-2 {
+  color: #75ccff !important;
+  caret-color: #75ccff !important;
+}
+.v-application .info.lighten-1 {
+  background-color: #51b0ff !important;
+  border-color: #51b0ff !important;
+}
+.v-application .info--text.text--lighten-1 {
+  color: #51b0ff !important;
+  caret-color: #51b0ff !important;
+}
+.v-application .info.darken-1 {
+  background-color: #007cd6 !important;
+  border-color: #007cd6 !important;
+}
+.v-application .info--text.text--darken-1 {
+  color: #007cd6 !important;
+  caret-color: #007cd6 !important;
+}
+.v-application .info.darken-2 {
+  background-color: #0064ba !important;
+  border-color: #0064ba !important;
+}
+.v-application .info--text.text--darken-2 {
+  color: #0064ba !important;
+  caret-color: #0064ba !important;
+}
+.v-application .info.darken-3 {
+  background-color: #004d9f !important;
+  border-color: #004d9f !important;
+}
+.v-application .info--text.text--darken-3 {
+  color: #004d9f !important;
+  caret-color: #004d9f !important;
+}
+.v-application .info.darken-4 {
+  background-color: #003784 !important;
+  border-color: #003784 !important;
+}
+.v-application .info--text.text--darken-4 {
+  color: #003784 !important;
+  caret-color: #003784 !important;
+}
+.v-application .success {
+  background-color: #4caf50 !important;
+  border-color: #4caf50 !important;
+}
+.v-application .success--text {
+  color: #4caf50 !important;
+  caret-color: #4caf50 !important;
+}
+.v-application .success.lighten-5 {
+  background-color: #dcffd6 !important;
+  border-color: #dcffd6 !important;
+}
+.v-application .success--text.text--lighten-5 {
+  color: #dcffd6 !important;
+  caret-color: #dcffd6 !important;
+}
+.v-application .success.lighten-4 {
+  background-color: #beffba !important;
+  border-color: #beffba !important;
+}
+.v-application .success--text.text--lighten-4 {
+  color: #beffba !important;
+  caret-color: #beffba !important;
+}
+.v-application .success.lighten-3 {
+  background-color: #a2ff9e !important;
+  border-color: #a2ff9e !important;
+}
+.v-application .success--text.text--lighten-3 {
+  color: #a2ff9e !important;
+  caret-color: #a2ff9e !important;
+}
+.v-application .success.lighten-2 {
+  background-color: #85e783 !important;
+  border-color: #85e783 !important;
+}
+.v-application .success--text.text--lighten-2 {
+  color: #85e783 !important;
+  caret-color: #85e783 !important;
+}
+.v-application .success.lighten-1 {
+  background-color: #69cb69 !important;
+  border-color: #69cb69 !important;
+}
+.v-application .success--text.text--lighten-1 {
+  color: #69cb69 !important;
+  caret-color: #69cb69 !important;
+}
+.v-application .success.darken-1 {
+  background-color: #2d9437 !important;
+  border-color: #2d9437 !important;
+}
+.v-application .success--text.text--darken-1 {
+  color: #2d9437 !important;
+  caret-color: #2d9437 !important;
+}
+.v-application .success.darken-2 {
+  background-color: #00791e !important;
+  border-color: #00791e !important;
+}
+.v-application .success--text.text--darken-2 {
+  color: #00791e !important;
+  caret-color: #00791e !important;
+}
+.v-application .success.darken-3 {
+  background-color: #006000 !important;
+  border-color: #006000 !important;
+}
+.v-application .success--text.text--darken-3 {
+  color: #006000 !important;
+  caret-color: #006000 !important;
+}
+.v-application .success.darken-4 {
+  background-color: #004700 !important;
+  border-color: #004700 !important;
+}
+.v-application .success--text.text--darken-4 {
+  color: #004700 !important;
+  caret-color: #004700 !important;
+}
+.v-application .warning {
+  background-color: #fb8c00 !important;
+  border-color: #fb8c00 !important;
+}
+.v-application .warning--text {
+  color: #fb8c00 !important;
+  caret-color: #fb8c00 !important;
+}
+.v-application .warning.lighten-5 {
+  background-color: #ffff9e !important;
+  border-color: #ffff9e !important;
+}
+.v-application .warning--text.text--lighten-5 {
+  color: #ffff9e !important;
+  caret-color: #ffff9e !important;
+}
+.v-application .warning.lighten-4 {
+  background-color: #fffb82 !important;
+  border-color: #fffb82 !important;
+}
+.v-application .warning--text.text--lighten-4 {
+  color: #fffb82 !important;
+  caret-color: #fffb82 !important;
+}
+.v-application .warning.lighten-3 {
+  background-color: #ffdf67 !important;
+  border-color: #ffdf67 !important;
+}
+.v-application .warning--text.text--lighten-3 {
+  color: #ffdf67 !important;
+  caret-color: #ffdf67 !important;
+}
+.v-application .warning.lighten-2 {
+  background-color: #ffc24b !important;
+  border-color: #ffc24b !important;
+}
+.v-application .warning--text.text--lighten-2 {
+  color: #ffc24b !important;
+  caret-color: #ffc24b !important;
+}
+.v-application .warning.lighten-1 {
+  background-color: #ffa72d !important;
+  border-color: #ffa72d !important;
+}
+.v-application .warning--text.text--lighten-1 {
+  color: #ffa72d !important;
+  caret-color: #ffa72d !important;
+}
+.v-application .warning.darken-1 {
+  background-color: #db7200 !important;
+  border-color: #db7200 !important;
+}
+.v-application .warning--text.text--darken-1 {
+  color: #db7200 !important;
+  caret-color: #db7200 !important;
+}
+.v-application .warning.darken-2 {
+  background-color: #bb5900 !important;
+  border-color: #bb5900 !important;
+}
+.v-application .warning--text.text--darken-2 {
+  color: #bb5900 !important;
+  caret-color: #bb5900 !important;
+}
+.v-application .warning.darken-3 {
+  background-color: #9d4000 !important;
+  border-color: #9d4000 !important;
+}
+.v-application .warning--text.text--darken-3 {
+  color: #9d4000 !important;
+  caret-color: #9d4000 !important;
+}
+.v-application .warning.darken-4 {
+  background-color: #802700 !important;
+  border-color: #802700 !important;
+}
+.v-application .warning--text.text--darken-4 {
+  color: #802700 !important;
+  caret-color: #802700 !important;
+}</style></head><body><noscript><strong>We're sorry but 中山大学体育场馆预订系统 doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div data-app="true" class="v-application v-application--is-ltr theme--light" id="app"><div class="v-application--wrap"><div data-v-3db4ab6d=""><header data-v-3db4ab6d="" class="header"><div data-v-3db4ab6d="" class="header-content"><img data-v-3db4ab6d="" src="/img/logo.8a2ba715.png" alt="University Logo" class="logo"><h1 data-v-3db4ab6d="" class="title desktop-only">体育场馆管理与预约系统</h1><div data-v-3db4ab6d="" class="spacer"></div><div data-v-3db4ab6d="" class="user-info"><span data-v-3db4ab6d="" class="user-name desktop-only">上官知弘</span><span data-v-3db4ab6d="" class="user-points desktop-only">运动时: 156.00 元</span><!----><button data-v-3db4ab6d="" class="recharge-btn">我的账号</button><button data-v-3db4ab6d="" class="logout-btn">登出</button></div></div></header></div><div data-v-2b670fda="" class="main-container"><div data-v-2b670fda="" class="v-overlay theme--dark" style="z-index: 5;"><div class="v-overlay__scrim" style="opacity: 0; background-color: rgb(33, 33, 33); border-color: rgb(33, 33, 33);"></div></div><!----><!----><!----><main data-v-2b670fda="" class="main-content"><div data-v-2b670fda="" class="content-wrapper"><div data-v-2b670fda="" class="content-header"><h2 data-v-2b670fda="" class="page-title">场地选择</h2><button data-v-2b670fda="" class="btn btn-primary"><i data-v-2b670fda="" aria-hidden="true" class="v-icon notranslate mr-2 mb-1 mdi mdi-home theme--light" style="color: white;"></i>返回 </button></div><div data-v-2b670fda="" class="content-grid"><div data-v-2b670fda="" class="venue-selection"><div data-v-2b670fda="" class="venue-info"><img data-v-2b670fda="" src="https://gym.sysu.edu.cn/uploads/c47304cc-f039-442c-9225-f01e1b153637_东校园羽毛球场1.jpg" alt="Venue" class="venue-image"><div data-v-2b670fda=""><h3 data-v-2b670fda="" class="venue-name">东校园体育馆羽毛球场</h3><p data-v-2b670fda="" class="venue-location">体育馆</p><p data-v-2b670fda="" class="venue-location">扣费规则：预约或接受邀请都将被全额扣费，场地使用后根据实际参与人数均摊费用并退还差额。</p></div></div><div data-v-2b670fda="" class="venue-actions"><button data-v-2b670fda="" class="btn btn-primary"> 候补排队 </button></div><div data-v-2b670fda="" class="date-selector"><div data-v-2b670fda="" class="date-item selected"><div data-v-2b670fda="" class="date-day">星期六</div><div data-v-2b670fda="" class="date-number">04-19</div><div data-v-2b670fda="" class="date-available">0</div></div><div data-v-2b670fda="" class="date-item"><div data-v-2b670fda="" class="date-day">星期日</div><div data-v-2b670fda="" class="date-number">04-20</div><div data-v-2b670fda="" class="date-available">0</div></div><div data-v-2b670fda="" class="date-item"><div data-v-2b670fda="" class="date-day">星期一</div><div data-v-2b670fda="" class="date-number">04-21</div><div data-v-2b670fda="" class="date-available">40</div></div></div><div data-v-2b670fda="" class="time-slot-table"><table data-v-2b670fda=""><thead data-v-2b670fda=""><tr data-v-2b670fda=""><th data-v-2b670fda="" style="max-width: 150px; width: 150px; position: sticky; left: 0px; background: white; z-index: 1;"> 场次/场地 </th><th data-v-2b670fda="" style="min-width: 50px;"> 场地1 </th><th data-v-2b670fda="" style="min-width: 50px;"> 场地2 </th><th data-v-2b670fda="" style="min-width: 50px;"> 场地3 </th><th data-v-2b670fda="" style="min-width: 50px;"> 场地4 </th><th data-v-2b670fda="" style="min-width: 50px;"> 场地5 </th><th data-v-2b670fda="" style="min-width: 50px;"> 场地6 </th><th data-v-2b670fda="" style="min-width: 50px;"> 场地7 </th><th data-v-2b670fda="" style="min-width: 50px;"> 场地8 </th><th data-v-2b670fda="" style="min-width: 50px;"> 场地9 </th><th data-v-2b670fda="" style="min-width: 50px;"> 场地10 </th><th data-v-2b670fda="" style="min-width: 50px;"> 场地12 </th><th data-v-2b670fda="" style="min-width: 50px;"> 场地13 </th><th data-v-2b670fda="" style="min-width: 50px;"> 场地14 </th></tr></thead><tbody data-v-2b670fda=""><tr data-v-2b670fda=""><td data-v-2b670fda="" style="min-width: 150px; position: sticky; left: 0px; background: white; z-index: 1;"> 08:00-09:00 </td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td></tr><tr data-v-2b670fda=""><td data-v-2b670fda="" style="min-width: 150px; position: sticky; left: 0px; background: white; z-index: 1;"> 09:00-10:00 </td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td></tr><tr data-v-2b670fda=""><td data-v-2b670fda="" style="min-width: 150px; position: sticky; left: 0px; background: white; z-index: 1;"> 10:00-11:00 </td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td></tr><tr data-v-2b670fda=""><td data-v-2b670fda="" style="min-width: 150px; position: sticky; left: 0px; background: white; z-index: 1;"> 11:00-12:00 </td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td></tr><tr data-v-2b670fda=""><td data-v-2b670fda="" style="min-width: 150px; position: sticky; left: 0px; background: white; z-index: 1;"> 14:00-15:00 </td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td></tr><tr data-v-2b670fda=""><td data-v-2b670fda="" style="min-width: 150px; position: sticky; left: 0px; background: white; z-index: 1;"> 15:00-16:00 </td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td></tr><tr data-v-2b670fda=""><td data-v-2b670fda="" style="min-width: 150px; position: sticky; left: 0px; background: white; z-index: 1;"> 16:00-17:00 </td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td></tr><tr data-v-2b670fda=""><td data-v-2b670fda="" style="min-width: 150px; position: sticky; left: 0px; background: white; z-index: 1;"> 17:00-18:00 </td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td></tr><tr data-v-2b670fda=""><td data-v-2b670fda="" style="min-width: 150px; position: sticky; left: 0px; background: white; z-index: 1;"> 18:00-19:00 </td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td></tr><tr data-v-2b670fda=""><td data-v-2b670fda="" style="min-width: 150px; position: sticky; left: 0px; background: white; z-index: 1;"> 19:00-20:00 </td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td></tr><tr data-v-2b670fda=""><td data-v-2b670fda="" style="min-width: 150px; position: sticky; left: 0px; background: white; z-index: 1;"> 20:00-21:00 </td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td></tr><tr data-v-2b670fda=""><td data-v-2b670fda="" style="min-width: 150px; position: sticky; left: 0px; background: white; z-index: 1;"> 21:00-22:00 </td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td><td data-v-2b670fda="" style="min-width: 100px;"><button data-v-2b670fda="" disabled="disabled" class="slot-btn sold"> 已约 </button></td></tr></tbody></table></div></div><div data-v-2b670fda="" class="sidebar"><div data-v-2b670fda="" class="my-bookings"><h3 data-v-2b670fda="" class="sidebar-title">我的预约</h3><div data-v-2b670fda="" class="no-bookings"> 您当前没有预约 </div></div><!----><div data-v-2b670fda="" class="history-bookings"><h3 data-v-2b670fda="" class="sidebar-title">历史预约</h3><div data-v-2b670fda="" class="no-bookings"> 您没有历史预约 </div></div></div></div></div></main><!----><!----><div data-v-2b670fda="" class="v-dialog__container"><!----></div><!----><!----></div></div></div><script>var query = window.location.hash
+  .slice(2)
+  .split('&')
+  .filter(function(param) {
+    return !!param;
+  })
+  .reduce(function(memo, param) {
+    var keyValue = param.split('=');
+    memo[keyValue[0]] = keyValue[1];
+    return memo;
+  }, {});
+
+  if (query.access_token)
+  {
+    let auth = "{\"access_token\":\""+query.access_token +"\",\"token_type\":\"\Bearer\",\"expires_in\":\"3600\"}";
+    localStorage.setItem('scientia-session-authorization', auth);
+    //console.log('Success');
+    window.location.href = "/";
+  }</script></body></html>
